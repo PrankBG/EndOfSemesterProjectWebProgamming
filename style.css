@@ -13,48 +13,9 @@
     padding: 0 10px;
 }
 
-@media (min-width: 576px) {
-    .box {
-        max-width: 540px;
-    }
-}
-
-@media (min-width: 768px) {
-    .box {
-        max-width: 720px;
-    }
-}
-
-@media (min-width: 992px) {
-    .box {
-        max-width: 960px;
-        padding: 0 20px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .box {
-        max-width: 1240px;
-    }
-}
-
-@media (min-width: 1400px) {
-    .box {
-        max-width: 1320px;
-    }
-}
-
-
-
-
-
-
 img {
     max-width: 100%;
 }
-
-
-
 
 * {
     padding: 0;
@@ -83,7 +44,7 @@ img {
     flex-direction: column;
 }
 
-ul {
+#nav-ul {
     display: flex;
     list-style-type: none;
     justify-content: left;
@@ -97,7 +58,7 @@ a {
     color: white;
     cursor: pointer;
     text-decoration: none;
-    padding: 10px;
+    padding: 8px;
 }
 
 .no-padding {
@@ -223,9 +184,49 @@ a {
 
 }
 
+#main-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0;
+    margin: 24px auto;
+    text-align: center;
+}
+
+.footer-ul {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: solid 1px #dee2e6;
+    list-style-type: none;
+    padding-left: 0;
+    width: 100%;
+}
+
+.footer-ul li {
+    text-align: left;
+}
+
+.footer-link {
+    display: block;
+    padding: 8px;
+    color: rgba(33, 37, 41, 0.75);
+}
+
+.footer-text {
+    display: block;
+    color: rgba(33, 37, 41, 0.75);
+}
+
 
 @media (min-width: 576px) {
-    #main-nav-bar {
+    #main-nav-bar, #main-footer {
+        max-width: 540px;
+    }
+
+    .box {
         max-width: 540px;
     }
 
@@ -248,7 +249,11 @@ a {
 }
 
 @media (min-width: 768px) {
-    #main-nav-bar {
+    #main-nav-bar, #main-footer {
+        max-width: 720px;
+    }
+    
+    .box {
         max-width: 720px;
     }
 
@@ -263,8 +268,13 @@ a {
 }
 
 @media (min-width: 992px) {
-    #main-nav-bar {
+    #main-nav-bar, #main-footer {
         max-width: 960px;
+    }
+
+    .box {
+        max-width: 960px;
+        padding: 0 20px;
     }
 
     #wrap {
@@ -295,8 +305,12 @@ a {
 }
 
 @media (min-width: 1200px) {
-    #main-nav-bar {
+    #main-nav-bar, #main-footer {
         max-width: 1140px;
+    }
+
+    .box {
+        max-width: 1240px;
     }
 
     ul {
@@ -309,9 +323,14 @@ a {
 }
 
 @media (min-width: 1400px) {
-    #main-nav-bar {
+    #main-nav-bar, #main-footer {
         max-width: 1320px;
     }
+
+    .box {
+        max-width: 1320px;
+    }
+    
     ul {
         justify-content: left;
     }
@@ -320,4 +339,3 @@ a {
         width: 920px;
     }
 }
-
